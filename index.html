@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<pre id="log"></pre>
+<script>
+  // helper function: log message to screen
+  function log(msg) {
+    document.getElementById('log').textContent += msg + '\n';
+  }
+
+  // setup websocket with callbacks
+  var ws = new WebSocket('ws://localhost:8080');
+  ws.onopen = function() {
+    log('CONNECT');
+    s()
+  };
+  ws.onclose = function() {
+    log('DISCONNECT');
+  };
+  ws.onmessage = function(event) {
+	console.log(event);
+    log('MESSAGE: ' + event.data);
+  };
+
+  function s(){
+      ws.send("这是来自客户端的消息" + location.href + new Date())
+  }
+ 
+</script>
