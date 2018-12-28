@@ -5,6 +5,8 @@
 
 2.部署机安装：redis 包括redis-server和redis-cli
 
+3.sh start_ws.sh 启动连接服务
+
 
 websocketd-demo 是一个利用websocketd实现的长连接服务器demo
 
