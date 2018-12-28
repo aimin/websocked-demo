@@ -16,12 +16,13 @@
     log('DISCONNECT');
   };
   ws.onmessage = function(event) {
-	console.log(event);
-    log('MESSAGE: ' + event.data);
+	 // console.log(eval("("+event.data+")"));
+   log(event.data)
   };
 
   function s(){
-      ws.send("这是来自客户端的消息" + location.href + new Date())
+      //ws.send("399001.SZI")
+      ws.send("/stock/stockMarket/baseInfo?code=000001.SHI")
   }
  
 </script>
