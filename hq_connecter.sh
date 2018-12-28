@@ -56,7 +56,7 @@ function getHQ(){
 #输出行情
 for ((COUNT = 1; COUNT <= 1000000; COUNT++)); do
 	log "---------------------------------------------------"
-	url="http://mt.tougub.com/$INFO"
+	url="http://xxxxxxxxx.com/$INFO"
  	data=`getHQ $url`
  	echo $data
  	n=${#data}
