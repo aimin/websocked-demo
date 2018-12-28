@@ -1,6 +1,8 @@
 # websocketd-demo
 部署依赖：
+
 1.部署机安装：https://github.com/joewalnes/websocketd
+
 2.部署机安装：redis 包括redis-server和redis-cli
 
 
